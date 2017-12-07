@@ -1,0 +1,16 @@
+div#links {
+    width: 40%;
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    width: 40%;
+    margin: 1em auto;
+}
+.error {
+    color: red;
+}
+button {
+    color: white;
+    background-color: green;
+}

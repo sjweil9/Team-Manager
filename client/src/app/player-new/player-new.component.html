@@ -1,0 +1,10 @@
+<div id="links">
+    <a [routerLink]="['/players']">List</a> | <a [routerLink]="['/players', 'addplayer']"><b>Add Player</b></a>
+</div>
+<form (submit)="onSubmit()" #formData="ngForm">
+    <h4>Add Player</h4>
+    <p>Player Name: <input type="text" name="name" required minlength="2" [(ngModel)]="player.name" #playername="ngModel"></p>
+    <small class="error" [hidden]="playername.valid || playername.pristine">Name required (min 2 characters).</small>
+    <p>Preferred Position: <input type="text" name="position" [(ngModel)]="player.position" #playerposition="ngModel"></p>
+    <button [hidden]="! formData.valid" type="submit">Add Player</button>
+</form>

@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    width: 40%;
+    margin: 1em auto;
+}
+td, th {
+    border: 1px solid black;
+    padding: .25em;
+}
+button {
+    color: white;
+    background-color: red;
+}
+div#links {
+    width: 40%;
+    margin: 1em auto;
+    text-align: center;
+}

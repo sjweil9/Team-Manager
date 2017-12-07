@@ -1,0 +1,8 @@
+div#header {
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+div#header a {
+    text-decoration: none;
+}

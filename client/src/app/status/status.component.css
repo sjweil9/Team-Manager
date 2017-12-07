@@ -1,0 +1,34 @@
+h3 {
+    text-align: center;
+}
+div#links {
+    width: 40%;
+    margin: 1em auto;
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+button {
+    display: inline-block;
+    border: 1px solid black;
+    color: black;
+}
+button.yellow {
+    background-color: yellow;
+}
+button.red {
+    background-color: red;
+}
+button.green {
+    background-color: green;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 1em auto;
+}
+td, th {
+    border: 1px solid black;
+    padding: .25em;
+}

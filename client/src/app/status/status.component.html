@@ -1,0 +1,24 @@
+<h3>Player Status - Game {{ game }}</h3>
+<div id="links">
+    <a [routerLink]="['/status', 'game', '1']" [ngClass]="{'bold': game == 1}">Game 1</a> |
+    <a [routerLink]="['/status', 'game', '2']" [ngClass]="{'bold': game == 2}">Game 2</a> |
+    <a [routerLink]="['/status', 'game', '3']" [ngClass]="{'bold': game == 3}">Game 3</a>
+</div>
+<table>
+    <thead>
+        <th>Player Name</th>
+        <th>Preferred Position</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let player of players">
+            <td>{{ player.name }}</td>
+            <td>{{ player.position }}</td>
+            <td>
+                <button (click)="setPlayerStatus(player, 'playing')" [ngClass]="{'green': player.status[game] == 'playing'}">Playing</button>
+                <button (click)="setPlayerStatus(player, 'out')" [ngClass]="{'red': player.status[game] == 'out'}">Not Playing</button>
+                <button (click)="setPlayerStatus(player, 'undecided')" [ngClass]="{'yellow': player.status[game] == 'undecided'}">Undecided</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
